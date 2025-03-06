@@ -10,9 +10,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Lightning Fast Gains - LFG Token",
-  description: "Hold LFG and earn rewards every minute",
-    generator: 'v0.dev'
+  title: "Fast Cotton Picker - SLAVE Token",
+  description: "Hold $SLAVE and earn rewards every 30 seconds",
+    generator: 'gurujustin'
 }
 
 export default function RootLayout({
