@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import "./fonts.css"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`dark ${inter.variable}`}>
-      <body className="font-sans bg-black">{children}</body>
+      <body className="font-glacial">{children}</body>
     </html>
   )
 }
