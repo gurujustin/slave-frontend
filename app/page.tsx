@@ -35,7 +35,7 @@ export default function Home() {
           <img src="/shackles.png" alt="shackles" className="hidden md:block md:w-[300px]" />
           <div className="flex flex-col">
             {/* Main Content Grid */}
-            <div className="flex flex-col lg:flex-row gap-6 mb-12">
+            <div className="flex flex-col lg:flex-row gap-6 mb-4">
               {/* Token Info */}
               <Card className="bg-black/50 border border-yellow-500/30 p-6 rounded">
                 <h2 className="text-3xl font-bold text-[#fff29d] mb-4 drop-shadow-glow-yellow">$SLAVE TOKEN</h2>
@@ -64,8 +64,32 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Token Metrics Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+              {/* Buy Tax Box */}
+              <Card className="bg-black/50 border border-yellow-500/30 p-6 gap-4 rounded flex flex-col items-center justify-center">
+                <h3 className="text-xl font-bold text-[#fedd58] mb-2 animate-glow">Buy Tax</h3>
+                <p className="text-4xl font-bold text-[#fedd58] animate-glow">10%</p>
+              </Card>
+
+              {/* Sell Tax Box */}
+              <Card className="bg-black/50 border border-yellow-500/30 p-6 gap-4 rounded flex flex-col items-center justify-center">
+                <h3 className="text-xl font-bold text-[#fedd58] mb-2 animate-glow">Sell Tax</h3>
+                <p className="text-4xl font-bold text-[#fedd58] animate-glow">10%</p>
+              </Card>
+
+              {/* Rewards Box */}
+              <Card className="bg-black/50 border border-yellow-500/30 p-6 gap-4 rounded flex flex-col items-center justify-center">
+                <h3 className="text-xl font-bold text-[#fedd58] mb-2 animate-glow">Rewards</h3>
+                <div className="flex flex-col items-center">
+                  <p className="text-lg font-bold text-[#fedd58]">Every</p>
+                  <p className="text-3xl font-bold text-[#fedd58] animate-glow">30 Seconds</p>
+                </div>
+              </Card>
+            </div>
+
             {/* Calculator and Social Media Section */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Calculator Section */}
               <Card className="bg-black/50 border border-yellow-500/30 p-6 rounded">
                 <h2 className="text-xl font-bold text-yellow mb-6 flex items-center gap-2">
@@ -97,7 +121,8 @@ export default function Home() {
                   {calculatedReward && (
                     <div className="bg-black/50 border border-yellow-500/30 mt-4 p-1 text-white rounded">
                       <div className="text-center text-sm font-bold text-[#fedd58] animate-glow">
-                      ${calculatedRewardPer30s} per 30s<br/>${calculatedReward} daily
+                        ${calculatedRewardPer30s} per 30s
+                        <br />${calculatedReward} daily
                       </div>
                     </div>
                   )}
