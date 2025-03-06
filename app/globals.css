@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-inter);
+}
+
+@layer utilities {
+  .drop-shadow-glow {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  .drop-shadow-glow-text {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 7px rgba(255, 255, 255, 0.5);
+  }
+  .drop-shadow-glow-yellow {
+    text-shadow: 0 0 15px rgba(206, 190, 104, 0.5), 0 0 20px rgba(206, 190, 104, 0.5);
+  }
+}
+
+.text-yellow {
+  color: #fedd58;
+  text-shadow: 0 0 10px rgba(206, 190, 104, 0.5);
+}
+
+/* Additional glowing effects */
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(250, 204, 21, 0.8);
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
