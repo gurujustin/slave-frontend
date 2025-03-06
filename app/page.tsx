@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-row">
-          <img src="/shackles.png" alt="shackles" className="hidden md:block md:w-[300px]" />
+          <img src="/shackles.png" alt="shackles" className="hidden md:block md:w-[300px] md:h-[380px]" />
           <div className="flex flex-col">
             {/* Main Content Grid */}
             <div className="flex flex-col lg:flex-row gap-6 mb-4">
