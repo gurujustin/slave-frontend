@@ -52,7 +52,8 @@ export default function Home() {
                   asChild
                 >
                   <Link
-                    href="https://raydium.io/swap/"
+                    // href="https://raydium.io/swap/"
+                    href="#"
                     target="_blank"
                     className="flex relative sm:flex-col items-center gap-2 uppercase"
                   >
